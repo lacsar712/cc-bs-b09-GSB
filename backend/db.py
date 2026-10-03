@@ -22,6 +22,14 @@ CREATE TABLE IF NOT EXISTS strain_readings (
     processed_at timestamptz
 );
 CREATE INDEX IF NOT EXISTS idx_strain_readings_status ON strain_readings (status, id);
+
+CREATE TABLE IF NOT EXISTS peak_locks (
+    span_code text PRIMARY KEY,
+    peak_microstrain double precision NOT NULL,
+    peak_at timestamptz NOT NULL,
+    locked_by text NOT NULL,
+    locked_at timestamptz NOT NULL DEFAULT now()
+);
 """
 
 
