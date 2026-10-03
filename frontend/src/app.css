@@ -129,3 +129,87 @@ th {
   background: #fff8e1;
   color: #f57f17;
 }
+
+.peakwall {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+
+.peakwall .spanlist {
+  flex: 0 0 220px;
+  margin-bottom: 0;
+}
+
+.peakwall .peakdetail {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.spans {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.spans li {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.spans li:hover {
+  background: #f5f5f5;
+}
+
+.spans li.active {
+  background: #e3f2fd;
+  border-color: #1565c0;
+  font-weight: 600;
+}
+
+.peakcols {
+  display: flex;
+  gap: 1rem;
+}
+
+.peakcol {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+.peakcol.locked {
+  background: #fafafa;
+  border-style: dashed;
+}
+
+.peakcol h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.peakval {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.peaktime {
+  color: #555;
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+}
+
+.peakactions .row {
+  align-items: center;
+}
+
+.hint {
+  color: #777;
+  font-size: 0.85rem;
+}
